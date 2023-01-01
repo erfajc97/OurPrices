@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body{
+   font-size: 'Monserrat', sans-serif;
+   background-color: #f6f6f6;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.container-flex{
+    display: flex;
+
+}
+h1{
+    color: #6d708d;
+}
+h2{
+    margin: 10px;
+}
+
+.container-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b3b5c6;
+    margin-bottom: 40px;
+    /* background-color: #6d708d; */
+}
+
+.toggle-wraper{
+    /* border: 1px solid red; */
+    padding-right: 17px;
+    padding-top: 3px;
+
+}
+
+.switch{
+    position: relative;
+    background-color: #9fa3ed;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.switch::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#toggle:checked + .switch::after{
+    left: 30px;
+}
+
+#toggle:checked+.switch {
+    background-color: #c6c8f3;
+}
+
+#toggle{
+    transform: scale(0);
+
+}
+
+.container-price{
+    width: 250px;
+    background-color: #fff;
+    margin: 10px 5px;
+    color: #6d708d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(10,10, 10, 0.1);
+}
+
+.container-price p{
+    font-size: 32px;
+    margin: 0;
+    color: #484b5b;
+}
+
+.monthly-price{
+    display: none ;
+}
+
+.mostrar .annually-price{
+    display: none;
+}
+
+.mostrar .monthly-price {
+    display: block;
+}
+
+.container-price ul{
+    list-style: none;
+    padding: 0;
+    border-top: 1.5px solid #e7e7eb;
+}
+
+.container-price li{
+    border-bottom: 1.5px solid #e7e7eb;
+    padding: 15px 0;
+}
+
+.container-price button{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color: #f3f3f3;
+    cursor: pointer;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+    border: 1px solid transparent;
+    font-size: small;
+}
+
+.container-price button:hover{
+    background: linear-gradient(90deg, #fff, #fff);
+    border: 1px solid;
+    color: #6d71df;
+    background-color: #6d71df;
+
+}
+
+.opcion-profesional{
+    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+
+}
+
+.opcion-profesional p{
+    color: #fff;
+}
+
+#boton-profesional{
+    background: linear-gradient(90deg, #fff, #fff);
+    color: #6d71df;
+    border: 1px solid transparent;
+}
+
+#boton-profesional:hover{
+    border-color: #fff;
+    color: #fff;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+}
+
+
+@media (max-width:768px ){
+    .container-flex{
+        flex-direction: column;
+    }
+    .opcion-profesional {
+        transform: scale(1);
+
+    }
+}
